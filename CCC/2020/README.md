@@ -71,5 +71,24 @@ Notice how it doesn't matter the position of a burger type chosen, only the
 burger type itself. The only position that matters is the last person eating 
 that type of burger (since all previous people will still have an option since
 the original pool of burgers only went down 1). This is a dynamic programming
-problem
+problem where you need to continually build the probabilities of each consecutive
+number. 
+
+Take example 
+1 2 3 1 1 2 4 5 3 | n = 9
+0 1 2 3 4 5 6 7 8 | i
+Lets say you he takes the first, 2. By the time person i = 1 decides he will always
+take i = 5's burger since their is another 2 available, showing that it does not 
+matter what unique burger is taken, just that it is taken. This is why we only consider
+its last possible position as this is when another choice is made between the remaining
+burgers. Now how do we calculate the probability of a number? Lets take the probability
+to pick the number 2, because it's the first last number (not counting 1 cus they don't
+matter) its probability to be chosen is just 1/n x 2 (because their are two of them). 
+But after we choose 2 whats the probability that we choose, lets say, 4? Well after we
+choose 2, which is 2/9 we have a 1 / 4 in choosing any of the remaining numbers. So when 
+we get to the next last number, our probability to reach it is already calculated from 
+the previous ones. 
+A little bit confusing so I recommend going through this and manually running in on the
+test case above with pencil and paper to understand whats going on. 
+
 

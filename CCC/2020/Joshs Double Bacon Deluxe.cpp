@@ -1,5 +1,5 @@
-/*
- * Josh's Double Bacon Deluxe.cpp
+	/*
+ * Joshs Double Bacon Deluxe.cpp
  */
 #include <iostream>
 #include <vector>

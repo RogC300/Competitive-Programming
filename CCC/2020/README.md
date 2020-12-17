@@ -1,13 +1,15 @@
 # CCC 2020
 
-Problem S1 | Surmising a Sprinter’s Speed
+
+
+#Problem S1 | Surmising a Sprinter’s Speed
 
 Sort all the pairs by time and calculate every velocity between
 every adjacent pair. Remember that c++'s vector sort alg for pairs sorts
 by the first number in the pair then the second, like how it would 
 sort for strings.
 
-Problem S2 | Escape Room
+#Problem S2 | Escape Room
 
 It is essentially a breadth first search but you need to make an obersavation
 to achieve full marks. Notice how the possible positions you can go is solely
@@ -18,7 +20,7 @@ you find the number in, you don't need to recalculate it. So do a breadth first 
 (BFS) but have way to check if you have been their, in my case I mapped the coordinate
 pair with a bool.
 
-Problem S3 | Searching for Strings
+#Problem S3 | Searching for Strings
 
 Concenptually understanding the solution is far easier than the solution. First, notice
 that when you dont need to know every permutation of the substring and that you only need 
@@ -34,7 +36,7 @@ you need to use a standard binary search tree (std::set) rather than a hash map 
 since hash maps don't allow pairs of numbers. This is theoretically much slower as retrieval becomes
 O(log n) instead of O(1) however this difference should be negligable.
 
-Problem S4 | Swapping Seats
+#Problem S4 | Swapping Seats
 
 If you want a more detailed explanation refer to https://dmoj.ca/problem/ccc20s4/editorial as 
 this is essentially my solution.
@@ -84,7 +86,7 @@ while this here is me trying to fully explain why the solution works and any
 questions that I had pop up when I was solving this.
 
 
-Problem S5 | Josh’s Double Bacon Deluxe
+#Problem S5 | Josh’s Double Bacon Deluxe
 
 Notice how it doesn't matter the position of a burger type chosen, only the 
 burger type itself. The only position that matters is the last person eating 

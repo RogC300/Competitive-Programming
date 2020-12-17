@@ -93,9 +93,14 @@ the original pool of burgers only went down 1). This is a dynamic programming
 problem where you need to continually build the probabilities of each consecutive
 number. 
 
+
 Take example 
+
 1 2 3 1 1 2 4 5 3 | n = 9
+
 0 1 2 3 4 5 6 7 8 | i
+
+
 Lets say you he takes the first, 2. By the time person i = 1 decides he will always
 take i = 5's burger since their is another 2 available, showing that it does not 
 matter what unique burger is taken, just that it is taken. This is why we only consider
@@ -107,6 +112,7 @@ But after we choose 2 whats the probability that we choose, lets say, 4? Well af
 choose 2, which is 2/9 we have a 1 / 4 in choosing any of the remaining numbers. So when 
 we get to the next last number, our probability to reach it is already calculated from 
 the previous ones. 
+
 A little bit confusing so I recommend going through this and manually running in on the
 test case above with pencil and paper to understand whats going on. 
 

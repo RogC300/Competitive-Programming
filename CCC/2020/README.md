@@ -1,12 +1,14 @@
 # CCC 2020
 
 Problem S1 | Surmising a Sprinter’s Speed
+
 Sort all the pairs by time and calculate every velocity between
 every adjacent pair. Remember that c++'s vector sort alg for pairs sorts
 by the first number in the pair then the second, like how it would 
 sort for strings.
 
 Problem S2 | Escape Room
+
 It is essentially a breadth first search but you need to make an obersavation
 to achieve full marks. Notice how the possible positions you can go is solely
 dependant on your current number. This means that if you have exhausted a 
@@ -17,6 +19,7 @@ you find the number in, you don't need to recalculate it. So do a breadth first 
 pair with a bool.
 
 Problem S3 | Searching for Strings
+
 Concenptually understanding the solution is far easier than the solution. First, notice
 that when you dont need to know every permutation of the substring and that you only need 
 to compare if two strings have the same amount of each letter. The idea of the solution is
@@ -32,6 +35,7 @@ since hash maps don't allow pairs of numbers. This is theoretically much slower 
 O(log n) instead of O(1) however this difference should be negligable.
 
 Problem S4 | Swapping Seats
+
 If you want a more detailed explanation refer to https://dmoj.ca/problem/ccc20s4/editorial as 
 this is essentially my solution.
 
@@ -44,17 +48,29 @@ thats gonna be the swaps that aren't required after the first swapping.
 
 This question helps if their are examples. 
 Take (this is just for calculating a certain starting point)
+
 A B B C A B A C B C A A
+
 We have 5 A's 4 B's and 3 C's, so the borders should be like
+
 A B B C A | B A C B | C A A
+
 With the first 5 for A's, second for B's third for C'same
+
 Now lets swap out all the non-A's in A (lowecase for swap)
+
 A a a a A | B b C B | C b c
+
 so swaps = 3. 
 
+
+
 Then swap the non-B's in B
+
 A A A A A | B B b B | C C c
+
 So now swaps = 4
+
 
 The reason the formula guarentees that swapped letters are ideal
 (meaning B's in A always try to go to B) is because we add back the
@@ -62,11 +78,14 @@ MINIMUM number of between the B's in A and A's in B. This means that atleast
 those numbers are guarenteed to be able to be swapped directly between the two 
 since their atleast that many in both areas.
 
+
 Kinda confusing but refer to DMOJ's editorial for the more whole solution
 while this here is me trying to fully explain why the solution works and any
 questions that I had pop up when I was solving this.
 
+
 Problem S5 | Josh’s Double Bacon Deluxe
+
 Notice how it doesn't matter the position of a burger type chosen, only the 
 burger type itself. The only position that matters is the last person eating 
 that type of burger (since all previous people will still have an option since

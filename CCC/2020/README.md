@@ -36,6 +36,8 @@ you need to use a standard binary search tree (std::set) rather than a hash map 
 since hash maps don't allow pairs of numbers. This is theoretically much slower as retrieval becomes
 O(log n) instead of O(1) however this difference should be negligable.
 
+This solution also passes the DMOJ additional test cases.
+
 # Problem S4 | Swapping Seats
 
 If you want a more detailed explanation refer to https://dmoj.ca/problem/ccc20s4/editorial as 

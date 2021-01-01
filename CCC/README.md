@@ -2,10 +2,7 @@
 
 These are my solutions for the Waterloo Canadian Computing Competition
 
-Written explanations for each senior problem should be included in the years folder
-
-
-These solutions are unnoficial however scores are verified using the waterloo CCC grader.
+These solutions are unofficial however scores are verified using the waterloo CCC grader.
 
 
 # 2020

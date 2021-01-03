@@ -61,6 +61,7 @@ case grader.
 And heres the dp table
 
 8 8 8 17 17 17 23 20 26 32
+
 1 2 3 4  5  6  7  8  9  10
 
 You can see in the 8th position it decreases, and breaks my code since it doesnt consider going from the 9nth position. 
